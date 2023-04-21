@@ -37,10 +37,7 @@ databaseIds <-
     'ims_australia_lpd',
     'ims_germany',
     'ims_france',
-    'iqvia_amb_emr',
     'iqvia_pharmetrics_plus'
-#     ,
-# 	 'premier'
   )
 
 ## service name for keyring for db with cdm
@@ -56,9 +53,9 @@ for (i in (1:length(databaseIds))) {
     dplyr::filter(.data$sequence == 1) |>
     dplyr::filter(database == databaseIds[[i]])
   
-  databaseId <- as.character(cdmSource$sourceKey)
-  databaseName <- as.character(cdmSource$sourceName)
-  databaseDescription <- as.character(cdmSource$sourceName)
+  databaseId <- as.character(paste0(cdmSource$databaseId, "_", cdmSource$version))
+  databaseName <- as.character(cdmSource$databaseName)
+  databaseDescription <- as.character(cdmSource$databaseDescription)
   
   sourceId <- as.character(cdmSource$sourceId)
   runOn <- as.character(cdmSource$runOn)

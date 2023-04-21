@@ -4,7 +4,7 @@
   "description": "Cohort diagnostics on cohortDiagnosticsStudy cohorts.",
   "version": "v0.1.0",
   "skeletonVersion": "v0.0.1",
-  "createdDate": 19467,
+  "createdDate": 19468,
   "createdBy": "rao@ohdsi.org",
   "cohortDefinitions": [
     {
@@ -1327,7 +1327,7 @@
       },
       "logicDescription": "Status: Pending peer review.\nContributor: \nForum: \nLogic: this is an approximation of algorithm published by Imfeld et.al 2013.",
       "modifiedDate": 1668801541.9059998989105,
-      "name": "[P] Alzheimer's disease (based on Imfeld, 2013)",
+      "name": "Alzheimer's disease (based on Imfeld, 2013)",
       "id": 255
     },
     {
@@ -1373,13 +1373,13 @@
           "PrimaryCriteriaLimit": {"Type": "First"},
           "ObservationWindow": {
             "PostDays": 0,
-            "PriorDays": 365
+            "PriorDays": 0
           }
         }
       },
       "logicDescription": "Status: Pending peer review.\nContributor: \nForum: \nLogic: first occurrence of Alzheimer's disease",
       "modifiedDate": 1644116694.0889999866486,
-      "name": "[P] Alzheimer's disease (Simple)",
+      "name": "Alzheimer's disease (Simple)",
       "id": 100
     },
     {
@@ -2024,12 +2024,12 @@
       },
       "logicDescription": "Status: Accepted\nhashTag: #PhenotypePhebruary, #2023, #SystemicLupusErythematosus\nVersion: 3.10.0\nContributor: Joel Swerdel, Daniel Prieto-Alhambra\nForum: https://forums.ohdsi.org/t/phenotype-phebruary-2023-p5-systemic-lupus-erythematosus-sle/18223\nLogic: first signs and symptoms suggestive of Systemic lupus erythematosus (SLE) or first treatment suggestive of SLE with SLE diagnosis with 90 days.",
       "modifiedDate": 1644495301.1500000953674,
-      "name": "Systemic lupus erythematosus indexed on signs, symptoms, treatment or diagnosis (FP)",
+      "name": "Systemic lupus erythematosus indexed on signs, symptoms, treatment, or diagnosis (FP)",
       "id": 119
     }
   ],
   "name": "cohortDiagnosticsStudy",
-  "modifiedDate": 19467,
+  "modifiedDate": 19468,
   "modifiedBy": "rao@ohdsi.org",
   "id": 1,
   "packageName": "cohortDiagnosticsStudy"
