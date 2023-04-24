@@ -42,6 +42,8 @@ executeOnMultipleDataSources <- function(x) {
   cohortDatabaseSchema <- x$cohortDatabaseSchema
   
   databaseId <- x$databaseId
+  databaseName <- x$databaseName
+  databaseDescription <- x$databaseDescription
   
   cohortDiagnosticsStudy::execute(
     connectionDetails = connectionDetails,
@@ -51,6 +53,8 @@ executeOnMultipleDataSources <- function(x) {
     verifyDependencies = x$verifyDependencies,
     outputFolder = x$outputFolder,
     databaseId = databaseId,
+    databaseName = databaseName,
+    databaseDescription = databaseDescription,
     extraLog = extraLog
   )
 }
