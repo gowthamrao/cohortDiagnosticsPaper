@@ -29,17 +29,14 @@ databaseIds <-
   c(
     'truven_ccae',
     'truven_mdcd',
-    #'cprd',
     'jmdc',
-    'optum_extended_dod',
+    'optum_extended_ses',
     'optum_ehr',
     'truven_mdcr',
     'ims_australia_lpd',
     'ims_germany',
     'ims_france',
-    'iqvia_amb_emr',
-    'iqvia_pharmetrics_plus',
-	 'premier'
+    'iqvia_pharmetrics_plus'
   )
 
 ## service name for keyring for db with cdm
